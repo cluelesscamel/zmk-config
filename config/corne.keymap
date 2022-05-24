@@ -15,10 +15,6 @@
 #define NAV 4
 #define GAM 5
 
-&mt {
-    tapping-term-ms = <400>;
-};
-
 / {
         keymap {
                 compatible = "zmk,keymap";

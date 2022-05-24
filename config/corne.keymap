@@ -28,49 +28,5 @@
                         >;
                 };
 
-                numpad_layer {
-                        bindings = <
-   &trans	&kp Q		&kp W 		&kp E 		&kp R 		&kp T   &kp Y 		&kp U 		&kp I     		&kp O   		&kp P    	&trans
-   &trans	&mt LALT A	&mt LSHFT 	&mt LCTRL D	&lt SYM F	&kp G   &kp H 		&lt SYM J 	&mt RCTRL K		&mt RSHFT L		&mt LALT SEMI 	&trans
-   &trans	&kp Z		&kp X 		&kp C 		&kp V 		&kp B   &kp N 		&kp M 		&kp COMMA 		&kp DOT 		&kp FSLH 	&trans
-   						&mt FUN TAB	&kp LGUI 	&mt NUM RET 					&mt NAV ESC &kp SPACE 	&kp BSPC
-                        >;
-                };
-
-                symbols_layer {
-                        bindings = <
-   &trans	&kp Q		&kp W 		&kp E 		&kp R 		&kp T   &kp Y 		&kp U 		&kp I     		&kp O   		&kp P    	&trans
-   &trans	&mt LALT A	&mt LSHFT 	&mt LCTRL D	&lt SYM F	&kp G   &kp H 		&lt SYM J 	&mt RCTRL K		&mt RSHFT L		&mt LALT SEMI 	&trans
-   &trans	&kp Z		&kp X 		&kp C 		&kp V 		&kp B   &kp N 		&kp M 		&kp COMMA 		&kp DOT 		&kp FSLH 	&trans
-   						&mt FUN TAB	&kp LGUI 	&mt NUM RET 					&mt NAV ESC &kp SPACE 	&kp BSPC
-                        >;
-                };
-
-                function_layer {
-                        bindings = <
-   &trans	&kp Q		&kp W 		&kp E 		&kp R 		&kp T   &kp Y 		&kp U 		&kp I     		&kp O   		&kp P    	&trans
-   &trans	&mt LALT A	&mt LSHFT 	&mt LCTRL D	&lt SYM F	&kp G   &kp H 		&lt SYM J 	&mt RCTRL K		&mt RSHFT L		&mt LALT SEMI 	&trans
-   &trans	&kp Z		&kp X 		&kp C 		&kp V 		&kp B   &kp N 		&kp M 		&kp COMMA 		&kp DOT 		&kp FSLH 	&trans
-   						&mt FUN TAB	&kp LGUI 	&mt NUM RET 					&mt NAV ESC &kp SPACE 	&kp BSPC
-                        >;
-                };
-
-                navigation_layer {
-                        bindings = <
-   &trans	&trans 		&kp W 		&kp E 		&kp R 		&kp T   		&trans 		&kp HOME 	&kp END 	&trans   	&kp SLCK    	&trans
-   &trans	&kp LALT	&mt LSHFT 	&mt LCTRL D	&lt SYM F	&kp G   		&kp LEFT	&kp DOWN 	&kp UP		&kp RIGHT	&kp PSCRN 	&trans
-   &trans	&bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_CLR	&trans 		&kp PG_DN 	&kp PG_UP 	&trans 		&kp PAUSE_BREAK 	&trans
-   						&mt FUN TAB	&kp LGUI 	&mt NUM RET 					&mt NAV ESC &kp SPACE 	&trans
-                        >;
-                };
-
-                gaming_layer {
-                        bindings = <
-   &trans	&kp Q		&kp W 		&kp E 		&kp R 		&kp T   &kp Y 		&kp U 		&kp I     		&kp O   		&kp P    	&trans
-   &trans	&mt LALT A	&mt LSHFT 	&mt LCTRL D	&lt SYM F	&kp G   &kp H 		&lt SYM J 	&mt RCTRL K		&mt RSHFT L		&mt LALT SEMI 	&trans
-   &trans	&kp Z		&kp X 		&kp C 		&kp V 		&kp B   &kp N 		&kp M 		&kp COMMA 		&kp DOT 		&kp FSLH 	&trans
-   						&mt FUN TAB	&kp LGUI 	&mt NUM RET 					&mt NAV ESC &kp SPACE 	&kp BSPC
-                        >;
-                };
 		};
 };

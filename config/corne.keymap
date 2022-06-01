@@ -19,34 +19,41 @@
         keymap {
                 compatible = "zmk,keymap";
 
-                default_layer {
+                qwerty {
                         bindings = <
-   &none  &kp Q      &kp W        &kp E       &kp R       &kp T       &kp Y &kp U      &kp I       &kp O        &kp P         &none
-   &none  &mt LALT A &mt LSHIFT S &mt LCTRL D &lt SYM F   &kp G       &kp H &lt SYM J  &mt RCTRL K &mt RSHIFT L &mt LALT SEMI &none
-   &none  &mt RALT Z &kp X        &kp C       &kp V       &kp B       &kp N &kp M      &kp COMMA   &kp DOT      &kp FSLH      &none
-                                  &mt FUN TAB &kp LGUI    &lt NUM RET &mt NAV ESC      &kp SPACE   &kp BSPC
-                        >;
-                };
-                lower_layer {
-                        bindings = <
-   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5         &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-   &trans     &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &trans       &trans         &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &trans     &bt BT_CLR   &trans       &trans       &bootloader  &reset         &reset   &bootloader   &trans &trans    &trans &trans
-                                 &kp LGUI     &trans       &kp SPACE      &kp RET  &trans   &kp RALT
+   &none  &kp Q      &kp W       &kp E       &kp R       &kp T       &kp Y &kp U     &kp I       &kp O       &kp P         &none
+   &none  &mt LALT A &mt LSHFT S &mt LCTRL D &lt SYM F   &kp G       &kp H &lt SYM J &mt RCTRL K &mt RSHFT L &mt LALT SEMI &none
+   &none  &mt RALT Z &kp X       &kp C       &kp V       &kp B       &kp N &kp M     &kp COMMA   &kp DOT     &kp FSLH      &none
+                                 &lt FUN TAB &kp LGUI &lt NUM RET &lt NAV ESC &kp SPACE   &kp BSPC
                         >;
                 };
 
-                raise_layer {
-// -----------------------------------------------------------------------------------------
-// |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
-// | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | SHFT |     |     |     |     |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | GUI |     | SPC |   | ENT |     | ALT |
+                numbers {
                         bindings = <
-   &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
-   &kp LCTRL &trans   &trans &trans   &trans   &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
+   &none  &none    &LC(X) &LC(C) &LC(V) &none  &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH &none
+   &none  &tog GAM &LG(1) &LG(2) &LG(3) &none  &kp PLUS  &kp N4 &kp N5 &kp N6 &kp STAR &none
+   &none  &none    &LG(4) &LG(5) &LG(6) &LG(7) &kp EQUAL &kp N1 &kp N2 &kp N3 &none    &none
+                          &none &none &trans &mt LALT SPACE &mt LSHIFT N0 &kp DOT
+                        >;
+                };
+
+                symbols {
+                        bindings = <
+                        >;
+                };
+
+                function {
+                        bindings = <
+                        >;
+                };
+
+                navigation {
+                        bindings = <
+                        >;
+                };
+
+                games {
+                        bindings = <
                         >;
                 };
         };

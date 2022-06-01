@@ -30,15 +30,19 @@
 
                 numbers {
                         bindings = <
-   &none  &none    &LC(X) &LC(C) &LC(V) &none  &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH &none
-   &none  &tog GAM &LG(1) &LG(2) &LG(3) &none  &kp PLUS  &kp N4 &kp N5 &kp N6 &kp STAR &none
-   &none  &none    &LG(4) &LG(5) &LG(6) &LG(7) &kp EQUAL &kp N1 &kp N2 &kp N3 &none    &none
+   &none  &none    &LC(X) &LC(C) &LC(V) &none   &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH &none
+   &none  &tog GAM &LG(1) &LG(2) &LG(3) &none   &kp PLUS  &kp N4 &kp N5 &kp N6 &kp STAR &none
+   &none  &none    &LG(4) &LG(5) &LG(6) &LG(7)  &kp EQUAL &kp N1 &kp N2 &kp N3 &none    &none
                           &none &none &trans &mt LALT SPACE &mt LSHIFT N0 &kp DOT
                         >;
                 };
 
                 symbols {
                         bindings = <
+   &none &kp CARET &kp HASH &kp DLLR &kp PRCNT &kp QMARK &kp SQT   &kp LPAR &kp RPAR &kp GRAVE &kp DQT   &none
+   &none &kp STAR  &kp EXCL &kp PLUS &kp EQUAL &kp GT    &kp MINUS &kp LBRC &kp RBRC &kp AT    &kp COLON &none
+   &none &kp FSLH  &kp BSLH &kp PIPE &kp AMPS  &kp LT    &kp UNDER &kp LBKT &kp RBKT &kp TILDE &kp FSLH  &none
+                            &none &none &none &none &none &none
                         >;
                 };
 

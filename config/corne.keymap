@@ -30,9 +30,9 @@
 
                 numbers {
                         bindings = <
-   &none  &none    &kp LC(X) &kp LC(C) &kp LC(V) &none      &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH &none
-   &none  &tog GAM &kp LG(1) &kp LG(2) &kp LG(3) &none      &kp PLUS  &kp N4 &kp N5 &kp N6 &kp STAR &none
-   &none  &none    &kp LG(4) &kp LG(5) &kp LG(6) &kp LG(7)  &kp EQUAL &kp N1 &kp N2 &kp N3 &none    &none
+   &none  &none    &kp LC(X)  &kp LC(C)  &kp LC(V)  &none       &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH &none
+   &none  &tog GAM &kp LG(N1) &kp LG(N2) &kp LG(N3) &none       &kp PLUS  &kp N4 &kp N5 &kp N6 &kp STAR &none
+   &none  &none    &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(N7)  &kp EQUAL &kp N1 &kp N2 &kp N3 &none    &none
                           &none &none &trans &mt LALT SPACE &mt LSHIFT N0 &kp DOT
                         >;
                 };

@@ -9,12 +9,13 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define QWE 0
-#define NUM 1
-#define SYM 2
-#define FUN 3
-#define NAV 4
-#define GAM 5
-#define LCK 6
+#define COL 1
+#define GAM 2
+#define NUM 3
+#define SYM 4
+#define FUN 5
+#define NAV 6
+#define LCK 7
 
 &mt {
     tapping-term-ms = <200>;
@@ -49,11 +50,29 @@
                         >;
                 };
 
+                colemak {
+                        bindings = <
+   &none  &kp Q      &kp W       &kp F       &kp P       &kp G       &kp J &kp L     &kp U       &kp Y       &kp SEMI   &none
+   &none  &mt LALT A &mt LSHFT R &mt LCTRL S &lt SYM T   &kp D       &kp H &lt SYM N &mt RCTRL E &mt RSHFT I &mt LALT O &none
+   &none  &mt RALT Z &kp X       &kp C       &kp V       &kp B       &kp K &kp M     &kp COMMA   &kp DOT     &kp FSLH   &none
+                                 &lt FUN TAB &kp LGUI &lt NUM RET &lt NAV ESC &kp SPACE   &kp BSPC
+                        >;
+                };
+
+                games {
+                        bindings = <
+   &none &kp Q &kp W &kp E &kp R &kp N1  &kp Y &kp U &kp I     &kp O   &kp P    &none
+   &none &kp A &kp S &kp D &kp F &kp N2  &kp H &kp J &kp K     &kp L   &kp SEMI &none
+   &none &kp Z &kp X &kp C &kp V &kp N3  &kp N &kp M &kp COMMA &kp DOT &kp FSLH &none
+                      &kp LCTRL &kp SPACE &kp RET &to QWE &kp SPACE   &kp BSPC
+                        >;
+                };
+
                 numbers {
                         bindings = <
-   &none  &none    &kp LC(X)  &kp LC(C)  &kp LC(V)  &none       &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH &none
-   &none  &tog GAM &kp LG(N1) &kp LG(N2) &kp LG(N3) &none       &kp PLUS  &kp N4 &kp N5 &kp N6 &kp STAR &none
-   &none  &none    &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(N7)  &kp EQUAL &kp N1 &kp N2 &kp N3 &none    &none
+   &none  &to COL  &kp LC(X)  &kp LC(C)  &kp LC(V)  &none       &kp MINUS &kp N7 &kp N8 &kp N9 &kp FSLH &none
+   &none  &to GAM  &kp LG(N1) &kp LG(N2) &kp LG(N3) &none       &kp PLUS  &kp N4 &kp N5 &kp N6 &kp STAR &none
+   &none  &to QWE  &kp LG(N4) &kp LG(N5) &kp LG(N6) &kp LG(N7)  &kp EQUAL &kp N1 &kp N2 &kp N3 &none    &none
                           &none &none &trans &mt LALT SPACE &mt LSHIFT N0 &kp DOT
                         >;
                 };
@@ -82,15 +101,6 @@
    &none &kp LALT &mt LSHFT C_PREV &mt LCTRL C_PP &kp C_NEXT   &none  &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &kp PSCRN       &none
    &none &none    &none            &none          &none        &none  &none    &kp PG_DN &kp PG_UP &none     &kp PAUSE_BREAK &none
                             &kp DEL &kp LGUI &kp CAPS &trans &kp SPACE &none
-                        >;
-                };
-
-                games {
-                        bindings = <
-   &none &kp Q &kp W &kp E &kp R &kp N1  &kp Y &kp U &kp I     &kp O   &kp P    &none
-   &none &kp A &kp S &kp D &kp F &kp N2  &kp H &kp J &kp K     &kp L   &kp SEMI &none
-   &none &kp Z &kp X &kp C &kp V &kp N3  &kp N &kp M &kp COMMA &kp DOT &kp FSLH &none
-                      &kp LCTRL &kp SPACE &kp RET &lt NAV ESC &kp SPACE   &kp BSPC
                         >;
                 };
 
